@@ -1,0 +1,90 @@
+:root{
+    --vermelho:#e50914; /* criando uma variavel para facilitar a chamada de cores*/
+    --preto: #141414;
+
+
+}
+
+*{/* esta é uma maneira simples de fazer um reset na pagina*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: var(--preto);/* comando para informar a cor do corpo da pagina */
+    font-family: 'Times New Roman', Times, serif; /*fonte padra da pagina*/
+    color: white;/*cor para que os elemento que estao dentro do corpo da pagina adquiram*/
+}
+
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'arial black', Times;
+    font-size: 40px; /*tamanho da fonte*/
+    margin-left: 10px;/*margem antes do box*/
+}
+header nav a {
+     text-decoration:none; 
+     color: #aaa;
+     margin-right:20px ; /*margem depois do box*/ 
+ }
+ header nav a:hover{/* comando para quando o mause passar pelo objeto*/
+     color: #fff;
+ }
+ header .container{
+     display: flex;/*alinhando os objetos para que se adaptam a tela*/
+     flex-direction: row;/*comando para alinhar os objetos, ja vem por padrao do flex*/
+     align-items: center; /*centralizando os elementos*/
+     justify-content: space-between; /*espaçamento entre os box do container*/
+ }
+
+ /* filme principal*/
+ 
+ .filme-principal{
+     font-size: 16px; /*tamanho da fonte*/
+     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/homem-aranha-3-spider-man-no-way-home-e1621516234441.jpg'); /*configurando o fundo... configurando uma leve opacidade na imagem... chamando a imagem*/
+     height: 400px; /* limitando a altura do container*/
+     background-size: cover; /*especificar o tamanho da imagem*/
+     display: flex; /*alinhando os objetos para que se adaptam a tela*/
+     flex-direction: column;/*alinhando os objetos para que se adaptam a tela na hotisontal(em forma de coiluna)*/
+     justify-content: center; /*centralizando os objetos*/
+     align-items: flex-start; /*começando sempre da esquerda*/
+ }
+ .filme-principal .descricao{
+     margin-top: 10px;
+     margin-bottom: 40px;/* define o tamanho da margem acima do elemento button*/
+
+ }
+ .titulo{
+     font-size: 40px;
+     margin-top: 20px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+ }
+ .filme-principal .botao{
+     background-color: rgba(0,0,0,.50); /*criando efeito de transparencia*/
+     border: none;
+     color: white; /* cor dos caracteres*/
+     padding: 15px 30px; /* distanciamendo do caractere ate o final do elemento, ate 4 indicacoes/ 1 é para todos os lados, duas é 1* ↑ ↓ 2* → ← 4* ↑ → ↓ ←*/
+     font-size: 17px;/*tamanho da fonte*/
+     cursor: pointer;/*muda o cursor ao tocar o objeto*/
+     transition: .6s ease all; /*tempo de duraçao de uma animação*/
+ }
+.botao:hover{ /*esse comando altera os objetos ao passar o mause por cima*/
+    background-color: white; 
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+    font-size: 15px;
+}
+.filme-principal .container{
+    margin-left: 5px;
+    width: 70%;
+}
+.box-film{
+    height: 80%;
+    width: 80%;
+    display: block;
+}

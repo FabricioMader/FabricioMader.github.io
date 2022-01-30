@@ -1,0 +1,21 @@
+@media screen and (max-width:600px) { /*condicionando a largura da tela*/ 
+    header .container{
+        display: auto;
+        flex-direction: column;
+        left: auto;
+        width: auto;
+        
+    }
+    .filme-principal .botao{
+        margin-top: 3px;
+        width: 200px;
+        font-size: 9px;
+    }
+    .descricao{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+
+}
